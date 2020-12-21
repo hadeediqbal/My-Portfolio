@@ -9,7 +9,7 @@
       top: 0;
       left: 0;
       width: 65%;
-      height: 130%;
+      height: 131%;
       pointer-events: none;
       animation: animate 8s ease-in-out infinite,
                     backgroundmove 16s linear infinite;
