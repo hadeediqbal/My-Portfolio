@@ -55,26 +55,6 @@ section .star.star8 {
     background: url(../images/drive-download-20201221T002824Z-001/star8.png);
 }
 
-  @keyframes animate 
-    {
-      0%,20%,40%,60%,80% 
-      {
-          opacity: 0;
-      }
-      10%,30%,50%,70%,90%
-       {
-        opacity: 1;
-    }
-}
-
-@keyframes backgroundmove {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(2);
-    }
-}
 
 body {
     background-color: black;
@@ -216,17 +196,45 @@ p {
   margin: 20px 0;
   line-height: 1.5;
   font-style: normal;
+  grid-row: 1;
     
 }
 
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+footer h2 {
     text-align: center;
+    width: 100%;
+    color: white;
+  }
+
+@keyframes animate 
+{
+  0%,20%,40%,60%,80% 
+  {
+      opacity: 0;
+  }
+  10%,30%,50%,70%,90%
+   {
+    opacity: 1;
+}
 }
 
-.footer h2 {
-    font-size: 20px;
+@keyframes backgroundmove {
+0% {
+    transform: scale(1);
 }
+100% {
+    transform: scale(2);
+}
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    .header h1 {
+      width: 100%;
+      text-align: center;
+    }
